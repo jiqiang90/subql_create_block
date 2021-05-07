@@ -1,0 +1,10 @@
+type Address @entity {
+
+  id: ID! #id is a required field
+
+  address: String!
+
+  creationBlock: BigInt!
+
+  creationTime: Date!
+}

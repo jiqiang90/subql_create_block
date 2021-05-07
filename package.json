@@ -1,0 +1,27 @@
+{
+  "name": "Creation_Block",
+  "version": "1.0.0",
+  "description": "A simple SubQuery project that will return the creation block and timestamp of a specified address",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "prepack": "rm -rf dist && npm build",
+    "test": "jest",
+    "codegen": "./node_modules/.bin/subql codegen"
+  },
+  "homepage": "https://github.com/subquery/subql-starter",
+  "repository": "github:subquery/subql-starter",
+  "files": [
+    "dist",
+    "schema.graphql",
+    "project.yaml"
+  ],
+  "author": "James Bayly",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@polkadot/api": "^4.6.2",
+    "@subql/types": "^0.7.1",
+    "typescript": "^4.1.3",
+    "@subql/cli": "^0.9.3"
+  }
+}
